@@ -73,9 +73,7 @@ const App = () => {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <Section title="Step One">
-            Viet Nguyen Hoangw
-          </Section>
+          <Section title="Step One">vietnguyenhoangw</Section>
           <Section title="See Your Changes">
             <ReloadInstructions />
           </Section>

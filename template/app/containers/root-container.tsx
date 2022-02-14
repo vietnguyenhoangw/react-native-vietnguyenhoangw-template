@@ -9,7 +9,7 @@ import React, {useCallback, useEffect, useState} from 'react';
 import {StyleSheet} from 'react-native';
 
 // Components
-import {CModal} from '@/components';
+import {CModal, CText, CView} from '@/components';
 
 // Redux
 import {useDispatch, useSelector} from 'react-redux';
@@ -47,8 +47,10 @@ function RootContainer() {
     <>
       <CModal
         onSwipeComplete={onHideModal}
-        isModalVisible={errorModalOption?.isShow}
-      />
+        modalContainerStyle={{height: 100}}
+        isModalVisible={errorModalOption?.isShow}>
+        <CText h2 bold text={'Daniel'} />
+      </CModal>
     </>
   );
 }

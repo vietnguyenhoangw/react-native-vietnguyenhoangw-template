@@ -4,7 +4,7 @@ import {StyleSheet} from 'react-native';
 import {Colors} from '@/theme';
 
 export default StyleSheet.create({
-  containerRoot: {flex: 1,backgroundColor: Colors.white},
+  containerRoot: {flex: 1, backgroundColor: Colors.white},
   wrap: {flexWrap: 'wrap'},
   center: {justifyContent: 'center', alignItems: 'center'},
   bottomContent: {justifyContent: 'flex-end'},

@@ -32,21 +32,14 @@ import {CButtonType} from '@/models';
 import {CImage} from '../image';
 
 const KButton: React.FC<CButtonType> = props => {
+  const {isLinkBtn = false, titleBlack = false, titleWhite = false} = props;
 
-  const {
-    isLinkBtn = false,
-    titleBlack = false,
-    titleWhite = false,
-  } = props;
-
-  const btnStyle = [
-    isLinkBtn ? styles.btnLink : null,
-  ];
+  const btnStyle = [isLinkBtn ? styles.btnLink : null];
 
   const btnTitleStyle = [
     titleBlack ? styles.blackTitle : {},
-    titleWhite ? styles.whiteTitle : {}
-  ]
+    titleWhite ? styles.whiteTitle : {},
+  ];
 
   const buildIcon = (srcIcon: any, style: any) => {
     return (

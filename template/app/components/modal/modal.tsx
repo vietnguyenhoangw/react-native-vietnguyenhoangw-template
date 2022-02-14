@@ -16,6 +16,9 @@ import Modal from 'react-native-modal';
 // Styles
 import styles from './styles';
 
+// Themes
+import {Metrics} from '@/theme';
+
 // Models
 import {CModalType} from '@/models';
 
@@ -31,6 +34,7 @@ const CModal: React.FC<CModalType> = (props: any) => {
         swipeDirection="down"
         animationIn="slideInUp"
         animationOut="slideOutDown"
+        deviceHeight={Metrics.screenHeight + 80} // Fix spacing bottom some device
         onSwipeComplete={props.onSwipeComplete}
         onBackdropPress={props.onSwipeComplete}>
         <SafeAreaView style={{backgroundColor: 'white'}}>

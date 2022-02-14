@@ -24,7 +24,7 @@ import styles from './styles';
 import {CTextType} from '@/models';
 
 // Themes
-import { primaryTextTheme } from '@/theme';
+import {primaryTextTheme} from '@/theme';
 
 const CText: React.FC<CTextType> = props => {
   const {
@@ -38,8 +38,7 @@ const CText: React.FC<CTextType> = props => {
     h4 = false,
 
     bold = false,
-  } = props
-
+  } = props;
 
   var textStyle = [
     color ? {color: props.color} : {},
@@ -58,7 +57,8 @@ const CText: React.FC<CTextType> = props => {
 
   return (
     <Text
-      style={[styles.defaultText, primaryTextTheme , textStyle]}
+      allowFontScaling={false} // Disable device system font scaling
+      style={[styles.defaultText, primaryTextTheme, textStyle]}
       numberOfLines={props.numberOfLines && props.numberOfLines}>
       {props.text ?? 'null'}
     </Text>

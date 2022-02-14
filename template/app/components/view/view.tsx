@@ -63,7 +63,7 @@ const CView: React.FC<CViewType> & React.FC<any> = props => {
     shrink ? styles.shrink : null,
 
     // fastStyle
-    ...fastStyle
+    ...fastStyle,
   ];
 
   return <View style={[viewStyle, props.style]}>{props.children}</View>;

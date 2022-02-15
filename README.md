@@ -4,7 +4,7 @@
 This template building for skip some basic steps like build source's structure, common components: **button, image, text, view...** (*read more in components folder*), config basic lib: **i18n, rn-fast-image, navigation, production and staging environment, redux-saga, crop-image, image picker...** (*read more in package.json file*).
 
 > Based on **Ignite Boilerplate** and custom by vietnguyenhoangw
-> Ignite official docs: https://github.com/infinitered/ignite
+> <br/> Ignite official docs: https://github.com/infinitered/ignite
 
 ## Features
 - Components's fast-styles properties (h1, h2, center, fillWidth, bold, row, col ...)
@@ -58,9 +58,9 @@ yarn run-android-production (to debug with production env)
 vietnguyenhoangw-2021
 
 ## Contacts
-Email, Skype: vietnguyenhoangw@gmail.com
-Github: vietnguyenhoangw
-Linkedin: https://www.linkedin.com/in/viet-hoang-nguyen-656227171/
+Email, Skype: vietnguyenhoangw@gmail.com <br/>
+Github: vietnguyenhoangw <br/>
+Linkedin: https://www.linkedin.com/in/viet-hoang-nguyen-656227171/ <br/>
 
 
 **Everything is free, Hell Yeah!**

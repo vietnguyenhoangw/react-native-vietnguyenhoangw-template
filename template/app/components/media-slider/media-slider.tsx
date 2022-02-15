@@ -147,8 +147,8 @@ const CMediaSlider: React.FC<CMediaSliderType> = ({
         renderItem={renderItem}
         keyExtractor={(item: any, index: any) => `${item.toString() + index}`}
         data={isEmpty(data) ? [1] : data}
-        getItem={(data, index) => data[index]}
-        getItemCount={data => (data ? data.length : 0)}
+        getItem={(item, index) => item[index]}
+        getItemCount={item => (item ? item.length : 0)}
         scrollEnabled={!isPlayVideo}
       />
     </View>

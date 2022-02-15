@@ -1,5 +1,5 @@
 // Utils
-import {first, flatten, map, replace, size} from '@/utils'
+import {first, flatten, map, replace, size} from '@/utils';
 
 const STYLES = {
   'bW-{number}': (numb: number) => {

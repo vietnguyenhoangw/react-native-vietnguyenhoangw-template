@@ -24,14 +24,18 @@ export interface CBaseViewType {
 
 /** ****VIEW */
 export interface CViewType {
-  children?: JSX.Element | JSX.Element[] | React.ReactNode | React.ReactNodeArray;
+  children?:
+    | JSX.Element
+    | JSX.Element[]
+    | React.ReactNode
+    | React.ReactNodeArray;
 
   flex?: number;
   row?: boolean;
   col?: boolean;
   center?: boolean;
   fillWidth?: boolean;
-  fillHeight?: boolean;  
+  fillHeight?: boolean;
   wrap?: boolean;
   leftContent?: boolean;
   bottomContent?: boolean;

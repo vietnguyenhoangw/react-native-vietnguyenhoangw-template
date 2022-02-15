@@ -10,16 +10,15 @@ import {StyleSheet} from 'react-native';
 // Themes
 import {Colors, Metrics, primaryButtonTheme} from '@/theme';
 
-
 export default StyleSheet.create({
   container: {
     height: Metrics.buttonHeight,
     justifyContent: 'center',
-    ...primaryButtonTheme.background
+    ...primaryButtonTheme.background,
   },
   btnTitle: {
     alignSelf: 'center',
-    ...primaryButtonTheme.title
+    ...primaryButtonTheme.title,
   },
   icon: {
     alignSelf: 'center',

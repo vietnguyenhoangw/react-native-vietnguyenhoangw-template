@@ -1,22 +1,28 @@
-import React, {createRef, useRef, useState} from 'react';
+import React, {useRef, useState, memo} from 'react';
 
 // Styles
 import styles from './styles';
 
 // Components
 import {
-  CBaseView,
-  CButton,
-  CMediaSlider,
-  CScreenHeader,
   CText,
   CView,
+  CButton,
+  CBaseView,
+  CAlertModal,
+  CMediaSlider,
+  CScreenHeader,
 } from '@/components';
 import {useDispatch} from 'react-redux';
 import {ProductActions} from '@/redux';
 
-function HomeScreen({}) {
+const HomeScreen = memo(() => {
   const dispatch = useDispatch();
+  const alertRef = useRef<any>(null);
+
+  const onOpenModal = () => {
+    alertRef.current.onShow();
+  };
 
   return (
     <CBaseView>
@@ -31,8 +37,22 @@ function HomeScreen({}) {
             }}
           />
         </CView>
+        <CView m20>
+          <CButton btnTitle={'Open alert modal'} onPress={onOpenModal} />
+        </CView>
         <CMediaSlider data={undefined} />
       </CView>
+
+      <CAlertModal ref={alertRef}>
+        {/* Can remove children here */}
+        <CView>
+          <CText
+            style={styles.linkText}
+            text={'Click here to open alert modal'}
+          />
+        </CView>
+        {/* ========================== */}
+      </CAlertModal>
 
       <CView col m8 p8 fillWidth center>
         <CView row center>
@@ -50,6 +70,6 @@ function HomeScreen({}) {
       </CView>
     </CBaseView>
   );
-}
+});
 
 export default HomeScreen;

@@ -20,7 +20,7 @@ export function* getProductSaga(api: any, action: any): any {
       }
     } else {
       yield put(ProductActions.getProductFailure());
-      store.dispatch(AppActions.setAppError('Hello world'));
+      yield put(AppActions.setAppError('Hello world'));
     }
   } catch (error) {
     yield put(ProductActions.getProductFailure(error));

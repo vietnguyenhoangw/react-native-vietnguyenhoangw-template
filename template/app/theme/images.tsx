@@ -10,6 +10,7 @@ const Images = {
   X: require('@/assets/icons/X.png'),
   ShowPasswordEyes: require('@/assets/icons/ShowPasswordEyes.png'),
   HidePasswordEyes: require('@/assets/icons/HidePasswordEyes.png'),
+  CircleSuccess: require('@/assets/icons/CircleSuccess.png'),
 };
 
 export default Images;

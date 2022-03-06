@@ -180,6 +180,14 @@ export interface CModalType {
   isModalVisible: boolean;
 }
 
+export interface CAlertModalType {
+  children:
+    | JSX.Element
+    | JSX.Element[]
+    | React.ReactNode
+    | React.ReactNodeArray;
+}
+
 /** ****TEXT FIELD */
 export interface CTextFieldType {
   customRef?: any;

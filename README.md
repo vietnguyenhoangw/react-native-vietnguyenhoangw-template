@@ -38,7 +38,7 @@ Require basic environment to run React-native app (Node, java, yarn ...) followi
 - ### Init project
 ```sh
 1. Init project
-npx react-native init AppName --template https://github.com/vietnguyenhoangw/react-native-vietnguyenhoangw-template.git
+npx @react-native-community/cli init AppName --template https://github.com/vietnguyenhoangw/react-native-vietnguyenhoangw-template.git
 ```
 
 - ### Run projects
